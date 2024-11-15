@@ -1,5 +1,6 @@
 
 // import './App.css'
+import State from './Components/Hooks/State';
 import MovieCard from './Components/MovieCard';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-      <MovieCard />    
+      {/* <MovieCard />     */}
+      <State />
     </>
   )
 }

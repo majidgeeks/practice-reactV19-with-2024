@@ -55,14 +55,15 @@ const MovieCard = () => {
     // })
 
     return(
-        <div style={{width:'100%', height:'auto', display:'flex', flexWrap:'wrap', 
+        <div style={{width:'100%', display:'flex', flexWrap:'wrap', 
             justifyContent:'space-evenly', backgroundColor:'#d9dbe8'
           }}>
             
             {moviesData.map((data) => {
                 return(
            <>
-           <div style={{width:350, borderWidth:2, borderColor:'blue',
+           <div 
+           style={{width:350, height:'100%',
              backgroundColor:'#f8f9f9', 
               borderRadius:10, marginBottom:10, padding:5, paddingRight:5, paddingLeft:5,}}>
            <div key={data}>
@@ -70,7 +71,7 @@ const MovieCard = () => {
             style={{width:350, height:300, objectFit:'cover'}}
             />
            </div>
-           <div>
+           <div className="flex flex-col justify-evenly h-36">
             <p>Title : {data.Title}</p>
            <p>Rating : {data.Rated}</p>
            <p>Released : {data.Year}</p>
