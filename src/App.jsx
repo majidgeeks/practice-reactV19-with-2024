@@ -5,6 +5,7 @@ import State from './Components/Hooks/State';
 import UseStatePractice from './Components/Hooks/UseStatePractice';
 import MovieCard from './Components/MovieCard';
 import Parent from './Components/Props/Prent';
+import ToggleState from './Components/Toggle State/ToggleState';
 
 function App() {
  
@@ -15,7 +16,8 @@ function App() {
       {/* <State /> */}
       {/* <UseStatePractice /> */}
       {/* <DerivedState /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <ToggleState />
     </>
   )
 }
