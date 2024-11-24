@@ -17,11 +17,11 @@ const ToggleState = () => {
       <div className="flex flex-col items-center justify-between h-full w-full bg-slate-300">
         <h2>Switch Button</h2>
         <img src={toggleImage} width={300} />
-        <div className="bg-black w-44 mt-5 rounded-full">
+        <div className="bg-black w-40 mt-5 rounded-full">
           <button
             onClick={handleSwitch}
-            className={`w-20 ${toggleBtnBg} 
-          h-20 rounded-full ${toggleBtnPosition}`}
+            className={`w-16 ${toggleBtnBg} 
+          h-16 rounded-full ${toggleBtnPosition}`}
           >
             {toggleTxt}
           </button>
