@@ -15,7 +15,7 @@ const ToDoList = () => {
     if (indexForUpdate !== null) {
       setTask((previousTask) =>
         previousTask.map((t, index) => {
-          return index === indexForUpdate ? data : t;
+          return index === indexForUpdate ? data : t ;
         })
       );
       setIndexForUpdate(null);
@@ -31,10 +31,10 @@ const ToDoList = () => {
   };
 
   const handleUpdate = (index) => {
-    console.log("index for update", index);
+    // console.log("index for update", index);
     setIndexForUpdate(index);
     const update = task.filter((_, i) => i === index);
-    console.log("update value", update);
+    // console.log("update value", update);
     setValue("task", update[0].task);
   };
 
@@ -90,7 +90,7 @@ const ToDoList = () => {
               className="w-96 h-14 rounded-full px-3
          flex items-center justify-between bg-white border-2 my-1"
             >
-              <p className={`${lineThrough ? "line-through" : ""}`}>
+              <p>
                 {data.task}
               </p>
               <div className="flex items-center justify-center w-14">
