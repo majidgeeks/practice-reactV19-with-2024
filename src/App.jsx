@@ -6,6 +6,7 @@ import Counter from './Components/Hooks/UseState/Counter';
 import UseStatePractice from './Components/Hooks/UseStatePractice';
 import MovieCard from './Components/MovieCard';
 import Parent from './Components/Props/Prent';
+import Register from './Components/Register';
 import ToDoList from './Components/ToDoList';
 import ToggleState from './Components/Toggle State/ToggleState';
 
@@ -21,7 +22,8 @@ function App() {
       {/* <Parent /> */}
       {/* <ToggleState /> */}
       {/* <ToDoList /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Register />
     </>
   )
 }
