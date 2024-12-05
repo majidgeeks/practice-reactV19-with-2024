@@ -9,6 +9,7 @@ import Parent from './Components/Props/Prent';
 import Register from './Components/Register';
 import ToDoList from './Components/ToDoList';
 import ToggleState from './Components/Toggle State/ToggleState';
+import RouterNavigate from './Routs/Router';
 
 function App() {
  
@@ -23,7 +24,8 @@ function App() {
       {/* <ToggleState /> */}
       {/* <ToDoList /> */}
       {/* <Counter /> */}
-      <Register />
+      {/* <Register /> */}
+      <RouterNavigate />
     </>
   )
 }

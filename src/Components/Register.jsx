@@ -1,7 +1,10 @@
 import CustomInput from "./Utills/CustomInput";
 import { useForm, Controller } from "react-hook-form";
+import { useNavigate } from "react-router"
+
 
 const Register = () => {
+  let navigation = useNavigate();  
   const { control, handleSubmit, reset } = useForm({
     defaultValues: {
       firstName: "",
@@ -17,6 +20,7 @@ const Register = () => {
      const getData = JSON.parse(localStorage.getItem('user'))
      console.log('getData',getData)
     reset();
+    navigation('login')
   };
 
   return (
