@@ -2,6 +2,7 @@
 // import './App.css'
 import DerivedState from './Components/Hooks/DerivedState';
 import State from './Components/Hooks/State';
+import UseEffectChallange from './Components/Hooks/UseEffect/UseEffectChallange';
 import Counter from './Components/Hooks/UseState/Counter';
 import UseStatePractice from './Components/Hooks/UseStatePractice';
 import MovieCard from './Components/MovieCard';
@@ -25,7 +26,8 @@ function App() {
       {/* <ToDoList /> */}
       {/* <Counter /> */}
       {/* <Register /> */}
-      <RouterNavigate />
+      {/* <RouterNavigate /> */}
+      <UseEffectChallange />
     </>
   )
 }

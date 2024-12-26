@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const WelcomePage = () => {
-    // const [user, setUser] = useState('');
+    const [user, setUser] = useState('');
+    const getData = JSON.parse(localStorage.getItem('user'));
 
-    // const getData = JSON.parse(localStorage.getItem('user'));
-    // setUser(getData.firstName);
+   useEffect(() => {
+    setUser(getData.firstName);
+   },[user]);
 
     return(
         <div>
-          <h1>Hello welcome</h1>
+          <h1>Hello welcome {user} </h1>
         </div>
     )
 };
