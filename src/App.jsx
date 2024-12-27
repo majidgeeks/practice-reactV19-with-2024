@@ -2,6 +2,7 @@
 // import './App.css'
 import DerivedState from './Components/Hooks/DerivedState';
 import State from './Components/Hooks/State';
+import SelfCounter from './Components/Hooks/UseEffect/SelfCounter';
 import UseEffectChallange from './Components/Hooks/UseEffect/UseEffectChallange';
 import Counter from './Components/Hooks/UseState/Counter';
 import UseStatePractice from './Components/Hooks/UseStatePractice';
@@ -27,7 +28,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Register /> */}
       {/* <RouterNavigate /> */}
-      <UseEffectChallange />
+      {/* <UseEffectChallange /> */}
+      <SelfCounter />
     </>
   )
 }
