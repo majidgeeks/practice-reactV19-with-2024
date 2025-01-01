@@ -2,6 +2,7 @@
 // import './App.css'
 import DerivedState from './Components/Hooks/DerivedState';
 import State from './Components/Hooks/State';
+import PokemonCard from './Components/Hooks/UseEffect/Pokemon/PokemonCard';
 import SelfCounter from './Components/Hooks/UseEffect/SelfCounter';
 import UseEffectChallange from './Components/Hooks/UseEffect/UseEffectChallange';
 import Counter from './Components/Hooks/UseState/Counter';
@@ -29,7 +30,8 @@ function App() {
       {/* <Register /> */}
       {/* <RouterNavigate /> */}
       {/* <UseEffectChallange /> */}
-      <SelfCounter />
+      {/* <SelfCounter /> */}
+      <PokemonCard />
     </>
   )
 }
